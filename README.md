@@ -3,6 +3,7 @@ This is the README for CMS winter school hand-on
 Before to do the hand-on, we should first set the environment
 ```bash
 source /cvmfs/cms.cern.ch/cmsset_default.sh
+SCRAM_ARCH=slc7_amd64_gcc700
 export PATH=/cvmfs/container.ihep.ac.cn/bin:$PATH
 hep_container shell CentOS7
 ```

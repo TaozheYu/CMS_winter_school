@@ -25,13 +25,18 @@ git clone git@github.com:TaozheYu/CMS_winter_school.git
 If you can't use git, copy them from here:
 
 ```bash
+exit
+cd winter_school_CMSSW_8_1_0/src
 cp -r /publicfs/cms/user/yutz/CMS_winter_school  ./
+hep_container shell CentOS7
 ``` 
 
 ## 4.Produce the Ntuple files
 We run the event selection script to produce the ntuple files
 
 ```bash
+cmsenv
+scram b
 cd CMS_winter_school
 root -b -q EventSelection_dineutrino_Resolved_2018.cpp
 ```
